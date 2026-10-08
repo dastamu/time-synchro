@@ -14,4 +14,11 @@ sudo timedatectl set-ntp on
 sudo timedatectl set-timezone Europe/Warsaw
 
 timedatectl
+'              Local time: czw 2026-10-08 11:16:23 CEST
+           Universal time: czw 2026-10-08 09:16:23 UTC
+                 RTC time: czw 2026-10-08 09:16:23
+                Time zone: Europe/Warsaw (CEST, +0200)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no'
 ```
