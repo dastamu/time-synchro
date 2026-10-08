@@ -22,3 +22,15 @@ System clock synchronized: yes
               NTP service: active
           RTC in local TZ: no'
 ```
+## EL 9
+```sh
+sudo nano /etc/chrony.conf
+'server 194.146.251.100 iburst
+server 194.146.251.101 iburst'
+sudo systemctl restart chronyd
+sudo timedatectl set-ntp true
+sudo chronyc makestep # synchro now
+chronyc sources -v
+chronyc tracking
+timedatectl
+```
