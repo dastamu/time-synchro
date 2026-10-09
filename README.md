@@ -22,7 +22,7 @@ System clock synchronized: yes
               NTP service: active
           RTC in local TZ: no'
 ```
-## EL 9
+## EL 9.8
 ```sh
 sudo nano /etc/chrony.conf
 '
