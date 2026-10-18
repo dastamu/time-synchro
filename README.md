@@ -22,7 +22,7 @@ System clock synchronized: yes
               NTP service: active
           RTC in local TZ: no'
 ```
-## EL 9.8
+## EL 10.2, 9.8
 ```sh
 sudo nano /etc/chrony.conf
 '
@@ -33,6 +33,7 @@ sudo systemctl restart chronyd
 
 sudo timedatectl set-ntp true
 sudo timedatectl set-timezone Europe/Warsaw
+sudo timedatectl set-local-rtc 0
 
 sudo chronyc makestep # synchro now
 chronyc sources -v
